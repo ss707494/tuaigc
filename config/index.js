@@ -1,3 +1,8 @@
+// config/index
+import {UnifiedWebpackPluginV5} from 'weapp-tailwindcss/webpack'
+
+// ts 版本
+// import { UnifiedWebpackPluginV5 } from 'weapp-tailwindcss/webpack'
 const config = {
   projectName: 'tuaigc',
   date: '2023-7-17',
@@ -46,7 +51,20 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    }
+    },
+    webpackChain(chain) {
+      chain.merge({
+        plugin: {
+          install: {
+            plugin: UnifiedWebpackPluginV5,
+            args: [{
+              appType: 'taro',
+              injectAdditionalCssVarScope: true, // 配置此字段为 true 即可
+            }]
+          }
+        }
+      })
+    },
   },
   h5: {
     publicPath: '/',

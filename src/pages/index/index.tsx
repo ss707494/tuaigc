@@ -1,8 +1,7 @@
 import './index.scss'
+import {IndexPage} from '../../components/index'
 
 export default function Index() {
 
-  return <div>
-    首页
-  </div>
+  return <IndexPage />
 }

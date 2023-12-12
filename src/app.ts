@@ -3,6 +3,7 @@ import { useLaunch } from '@tarojs/taro'
 import './app.scss'
 import 'taro-icons/scss/MaterialCommunityIcons.scss'
 import 'taro-icons/scss/MaterialIcons.scss' // 112KB
+import 'taro-ui/dist/style/index.scss'
 
 function App({ children }: PropsWithChildren) {
 
