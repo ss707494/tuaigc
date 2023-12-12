@@ -1,0 +1,8 @@
+{
+  "extends": ["taro/react"],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/first": "off" // 开启绝对路径导入应该放在相对路径导入之前的规则
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "tuaigc",
+  "description": "aigc",
+  "appid": "wx98af102edff8477e",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
