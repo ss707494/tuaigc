@@ -1,11 +1,10 @@
 export default defineAppConfig({
   pages: [
     'pages/index/index',
+    'pages/detail/index',
   ],
-  permission: {
-  },
-  requiredPrivateInfos: [
-  ],
+  permission: {},
+  requiredPrivateInfos: [],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',

@@ -13,6 +13,7 @@ import homeIcon from '../../public/home.svg'
 import mineIcon from '../../public/mine.svg'
 import logoIcon from '../../public/logo.svg'
 import {useState} from 'react'
+import Taro from '@tarojs/taro'
 
 const listData = [
   [SpiderPotter, 'Spider Potter', 'Love, celebration, and a promise of forever.'],
@@ -22,6 +23,7 @@ const listData = [
 ]
 
 
+// html结构待优化
 export const IndexPage = () => {
 
   const [actTab, setActTab] = useState('Recommended')
@@ -67,7 +69,7 @@ export const IndexPage = () => {
               <View className='text-white text-3xl font-extrabold leading-10'>TOP1</View>
             </View>
 
-            <View className='flex flex-col gap-2 absolute right-0 top-0 rounded-2xl w-full h-full pl-[66%] pt-4'
+            <View className='m-1 flex flex-col gap-2 absolute right-0 top-0 w-full h-full pl-[66%] pt-4'
               style={{background: 'linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.29) 51.15%, rgba(255, 255, 255, 0.12) 59.9%, rgba(255, 255, 255, 0.00) 100%)'}}
             >
               <View className="text-black text-2xl font-bold font-['Poppins'] leading-9">Arachna</View>
@@ -118,6 +120,11 @@ export const IndexPage = () => {
           {listData.map(v => <View className='relative col-span-1 h-[360rpx] rounded-xl overflow-hidden'
             style={{boxShadow: '1px 4px 4px rgba(0, 0, 0, 0.25)'}}
             key={`list${v[1]}`}
+            onClick={() => {
+                                     Taro.navigateTo({
+                                       url: `/pages/detail/index`,
+                                     })
+                                   }}
           >
             <View className='top-[15rpx] left-[-66rpx] absolute rotate-[-49.13deg] px-8 flex justify-center items-center bg-rose-600'>
               <View className='text-white text-base font-extrabold leading-normal'>New</View>
@@ -161,16 +168,20 @@ export const IndexPage = () => {
             src={homeIcon}
           />
         </View>
-        Home
+        <View className=' text-xs font-semibold'>
+          Home
+        </View>
       </View>
-      <View><Image className='w-12 h-12'
-        src={logoIcon}
-      /></View>
+      <View>
+        <Image className='w-12 h-12'
+          src={logoIcon}
+        />
+      </View>
       <View className='w-6 h-6 flex flex-col items-center'>
         <View><Image className='w-4 h-4'
           src={mineIcon}
         /></View>
-        <View className=' opacity-30 text-violet-950 text-xs font-semibold leading-none'>Mine</View>
+        <View className='opacity-30 text-violet-950 text-xs font-semibold leading-none'>Mine</View>
       </View>
     </View>
   </View>

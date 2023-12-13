@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="114" height="75" viewBox="0 0 114 75" fill="none">
-  <g filter="url(#filter0_d_668_19)">
-    <g filter="url(#filter1_d_668_19)">
-      <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M30 42C30 27.0883 42.0883 15 57 15C71.9117 15 84 27.0883 84 42C84 56.9117 71.9117 69 57 69C42.0883 69 30 56.9117 30 42Z"
-            fill="url(#paint0_linear_668_19)"/>
-    </g>
-  </g>
+  <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M30 42C30 27.0883 42.0883 15 57 15C71.9117 15 84 27.0883 84 42C84 56.9117 71.9117 69 57 69C42.0883 69 30 56.9117 30 42Z"
+        fill="url(#paint0_linear_668_19)"/>
+  <!--  <g filter="url(#filter0_d_668_19)">-->
+  <!--    <g filter="url(#filter1_d_668_19)">-->
+  <!--    </g>-->
+  <!--  </g>-->
   <path fill-rule="evenodd" clip-rule="evenodd"
         d="M43.8457 56.5385H47.0732C48.1491 51.2314 50.8419 48.3127 55.1534 47.7808C61.6149 46.9847 66.4611 41.4116 68.0765 36.6347L65.6534 35.0424L67.2688 33.4501C68.8842 31.8578 70.506 29.4693 72.9226 24.6924C48.6919 24.6924 45.4611 46.9847 43.8457 56.5385Z"
         fill="white"/>

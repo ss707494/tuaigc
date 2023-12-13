@@ -1,0 +1,21 @@
+
+.element {
+  position: relative;
+  background: white;
+  border-radius: 1.5rem /* 24px */
+;
+}
+
+.element::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1.5rem /* 24px */
+;
+  z-index: -1;
+  background: linear-gradient(to right, #15097A, #FF006A);
+  margin: -5px; /* 调整这个值来控制边框大小 */
+}
